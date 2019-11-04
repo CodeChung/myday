@@ -1,0 +1,14 @@
+.page-landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 280px);
+    color: rgb(76, 172, 201);
+}
+
+.page-landing h1 {
+    font-size: 3.5em;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 1px 2px whitesmoke;
+}

@@ -1,26 +1,86 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Link, Route, Switch } from 'react-router-dom'
+import { slide as Menu } from 'react-burger-menu'
+import About from './pages/About/About'
+import Contact from './pages/Contact/Contact'
+import Landing from './pages/Landing/Landing'
+import Services from './pages/Services/Services'
+
+
+// import massage from './images/massage.mp4'
+import flower from './images/flowerinrain.mp4'
+import candle from './images/candle.mp4'
+import logo from './images/logolarge.jpg'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    navOpen: false,
+  }
+  componentDidMount() {
+    const video = document.getElementById("myVideo");
+
+    video.play()
+  }
+  toggleNav = () => {
+    const { navOpen } = this.state
+    this.setState({ navOpen: !navOpen })
+  }
+  closeNav = () => {
+    this.setState({ navOpen: false })
+  }
+  render() {
+    const { navOpen } = this.state
+    return (
+      <div id="outer-container">
+        <Menu 
+          isOpen={navOpen}
+          pageWrapId={ "page-wrap" } 
+          outerContainerId={ "outer-container" } 
+          right 
+          width={220}>
+          <div className='hamburger-list'>
+            <Link onClick={this.closeNav} to='/services'>Services</Link>
+            <Link onClick={this.closeNav} to='/about'>About</Link>
+            <Link onClick={this.closeNav} to='/contact'>Contact</Link>
+          </div>
+        </Menu>            
+        <main id="page-wrap">
+          <div className='video-wrapper'>
+            <video id='myVideo' className='video-background' src={candle} muted={true} loop={true} />
+          </div>
+          <section className='body'>
+            <nav className='nav'>
+              <Link onClick={this.closeNav} to='/'><img src={logo} /></Link>
+              <ul>
+                <li>
+                  <Link to='/' onClick={this.closeNav} >Home</Link>
+                </li>
+                <li>
+                  <Link to='/services' onClick={this.closeNav} >Services</Link>
+                </li>
+                <li>
+                  <Link to='/about' onClick={this.closeNav} >About</Link>
+                </li>
+                <li>
+                  <Link to='/contact' onClick={this.closeNav} >Contact</Link>
+                </li>
+              </ul>
+              <div className='hamburger' onClick={this.toggleNav} />
+            </nav>
+            <section className='main'>
+              <Switch>
+                <Route exact path='/' component={Landing} />
+                <Route path='/about' component={About} />
+                <Route path='/contact' component={Contact} />
+                <Route path='/services' component={Services} />
+              </Switch>
+            </section>
+          </section>
+        </main>
+      </div>
+    )
+  }
 }
 
 export default App;

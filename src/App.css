@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap');
+
 .App {
   text-align: center;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgb(73, 73, 73);
 }
 
 .App-logo {
@@ -14,9 +21,111 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(39, 39, 39);
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+#page-wrap {
+
+  position: relative;
+  z-index: 1000;
+}
+
+.video-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -100000;
+  padding: 0;
+  margin: 0;
+  object-fit: fill;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 10px;
+  padding: 0 70px;
+}
+
+nav img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+  font-size: 1.2em;
+  transition: .5s ease-in;
+}
+
+nav a:hover, nav a:active {
+  color: rgb(180, 180, 180);
+}
+
+nav a:hover::after {
+  content: '';
+  width: 80px;
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  font-family: 'Work Sans', serif;
+  font-size: 2.3em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  font-family: 'Work Sans', serif;
+}
+
+nav ul li {
+  padding: 0 15px;
+}
+
+.hamburger:before { 
+  font-size: 2em;
+  content:'\2630'; 
+  z-index: 1000000;
+  color: rgb(36, 36, 36);
+  position: relative;
+}
+
+.hamburger {
+  width: 100px;
+  left: 80px;
+  position: relative;
+}
+
+.hamburger-list {
+  display: flex !important;
+  flex-direction: column;
+  outline: none;
+}
+
+.hamburger-list a {
+  padding: 12px;
+  transition: .3s ease;
+}
+
+.hamburger-list a:hover {
+  color: rgb(236, 175, 175);
+}
+
+.hamburger-list a:focus, .hamburger-list a:active {
+  outline: none !important;
+}
+
+.main {
+  text-align: center;
+  color: rgb(175, 175, 175);
 }

@@ -1,0 +1,78 @@
+.page-contact {
+    background: rgb(123, 194, 52);
+    opacity: 0;
+    transition: .7s ease-in-out;
+    padding: 100px;
+
+}
+
+.contact-icons {
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    border-radius: 18px;
+    height: 460px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    transition: .4s ease-in-out;
+}
+
+.contact-icon:hover, .contact-icon:active {
+    background: lightblue;
+}
+
+.contact-icon-img {
+    font-size: 55px;
+    border-radius: 50%;
+    border: 3px solid rgb(175, 175, 175);
+    padding: 25px;
+    margin: 50px 0;
+}
+
+.contact-middle {
+    border-left: 1px solid rgb(175, 175, 175);
+    border-right: 1px solid rgb(175, 175, 175);
+    padding: 0;
+}
+
+.contact-icon a {
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+}
+
+.contact-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.hours {
+    width: 45%;
+    text-align: left;
+}
+
+.hours h3 {
+    position: relative;
+    left: 40px;
+}
+
+.hours ul {
+    list-style: none;
+}
+
+.hours ul li {
+    padding: 6px 0;
+}
+
+iframe {
+    border-radius: 2px;
+}
