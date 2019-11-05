@@ -18,6 +18,40 @@ class Contact extends React.Component {
         const { loading } = this.state
         return (
             <section className={`page-contact ${!loading && ' page-active'}`}>
+                <div className='contact-form-container'>
+                    <form className='contact-form'>
+                        <legend>Drop Us A Message</legend>
+                        <label>Email
+                            <input type='email' placeholder='user@mail.com' />
+                        </label>
+                        <label>Phone
+                            <input type='tel' placeholder='(111) 111-1111' pattern="([0-9]{3}) [0-9]{2}-[0-9]{3}" required />
+                        </label>
+                        <label>Message
+                            <textarea />
+                        </label>
+                        <button>Send</button>
+                    </form>
+                    <div className='doc-block'>
+                        <h2>Acupuncturist </h2>
+                        <p>Tommy has been practicing Acupuncture and Asian medicine for more than 10 years in Westlake Village, CA.</p>
+                        <p>He graduated from Liaoning Traditional Medical University in 1997, After he graduated, he practiced acupuncture, traditional massage, herbal medicine, and Qi gong as a doctor.</p>
+                        <p>His mission is to provide the best quality service to his patients.</p>
+                        <h2>Education</h2>
+                        <ul>
+                            <li>-CA Acupuncture Board Certified Acupuncturist</li>
+                            <li>-Liaoning University of Traditional Medicine</li>
+                            <li>    Bachelor's Degree in Traditional Medicine</li>
+                            <li>-South Baylo University</li>
+                            <li>    Master of Science in Acupuncture and Oriental Medicine</li>
+                            <li>-American Liberty University</li>
+                            <li>    Doctor of Philosophy in Oriental Medicine</li>
+                        </ul>
+                        <h2>Specialties</h2>
+                        <p>Acupuncture and herbal Medicine, Cupping Massage for treatments of chronic diseases for those that did not respond to Western medicine.</p>
+                        <p>Such as pinched nerve, neck pain, lower back pain, fibromyalgia, arthritis, headache, migraine, insomnia, anxiety, female or male infertility problems, menstrual disorder, depression, constipation, IBS, menopause, and weight loss.</p>
+                    </div>
+                </div>
                 <div className='contact-icons'>
                     <div className='phone contact-icon'>
                         <h2>Phone</h2>
@@ -59,6 +93,10 @@ class Contact extends React.Component {
                             <li>Friday: 10:00 AM - 9:00 PM</li>
                             <li>Saturday: 10:00 AM - 9:00 PM</li>
                         </ul>
+                        <div className='address'>
+                            26787 Agoura Rd., Suite #E7 <br />
+                            Calabasas, CA 91302
+                        </div>
                     </div>
                 </div>
             </section>

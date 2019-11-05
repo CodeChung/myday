@@ -1,5 +1,4 @@
 .page-services {
-    background: rgba(173, 216, 230, 0.979);
     opacity: 0;
     transition: 1.2s ease;
     display: flex;
@@ -21,7 +20,7 @@
 }
 
 .page-services img:hover, .page-services img:active {
-    transform: scale(1.07);
+    transform: scale(1.4);
 }
 
 .services {
@@ -32,7 +31,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 50px;
+    width: 400px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.336);
 }
 
 .services h1 {
