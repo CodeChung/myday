@@ -10,6 +10,15 @@
     flex-direction: column;
 }
 
+.contact-form-container {
+    background: whitesmoke;
+    margin: 0 auto 80px;
+    width: 90%;
+    border-radius: 18px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
 .contact-icons {
     background: whitesmoke;
     display: flex;
@@ -52,6 +61,14 @@
 .contact-icon a {
     text-decoration: none;
     color: rgb(175, 175, 175);
+}
+
+.icon-left {
+    border-radius: 18px 0 0 18px;
+}
+
+.icon-right {
+    border-radius: 0 18px 18px 0;
 }
 
 .contact-block {

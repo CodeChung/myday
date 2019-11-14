@@ -20,7 +20,7 @@
 }
 
 .page-services img:hover, .page-services img:active {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 .services {

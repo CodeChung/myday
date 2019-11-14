@@ -8,7 +8,6 @@ import Services from './pages/Services/Services'
 
 
 // import massage from './images/massage.mp4'
-import flower from './images/flowerinrain.mp4'
 import candle from './images/candle.mp4'
 import logo from './images/logolarge.jpg'
 import './App.css';
@@ -24,6 +23,7 @@ class App extends React.Component {
   }
   toggleNav = () => {
     const { navOpen } = this.state
+    console.log('yo')
     this.setState({ navOpen: !navOpen })
   }
   closeNav = () => {
@@ -51,7 +51,7 @@ class App extends React.Component {
           </div>
           <section className='body'>
             <nav className='nav'>
-              <Link onClick={this.closeNav} to='/'><img src={logo} /></Link>
+              <Link onClick={this.closeNav} to='/'><img src={logo} alt='logo' /></Link>
               <ul>
                 <li>
                   <Link to='/' onClick={this.closeNav} >Home</Link>

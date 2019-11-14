@@ -32,28 +32,9 @@ class Contact extends React.Component {
                         </label>
                         <button>Send</button>
                     </form>
-                    <div className='doc-block'>
-                        <h2>Acupuncturist </h2>
-                        <p>Tommy has been practicing Acupuncture and Asian medicine for more than 10 years in Westlake Village, CA.</p>
-                        <p>He graduated from Liaoning Traditional Medical University in 1997, After he graduated, he practiced acupuncture, traditional massage, herbal medicine, and Qi gong as a doctor.</p>
-                        <p>His mission is to provide the best quality service to his patients.</p>
-                        <h2>Education</h2>
-                        <ul>
-                            <li>-CA Acupuncture Board Certified Acupuncturist</li>
-                            <li>-Liaoning University of Traditional Medicine</li>
-                            <li>    Bachelor's Degree in Traditional Medicine</li>
-                            <li>-South Baylo University</li>
-                            <li>    Master of Science in Acupuncture and Oriental Medicine</li>
-                            <li>-American Liberty University</li>
-                            <li>    Doctor of Philosophy in Oriental Medicine</li>
-                        </ul>
-                        <h2>Specialties</h2>
-                        <p>Acupuncture and herbal Medicine, Cupping Massage for treatments of chronic diseases for those that did not respond to Western medicine.</p>
-                        <p>Such as pinched nerve, neck pain, lower back pain, fibromyalgia, arthritis, headache, migraine, insomnia, anxiety, female or male infertility problems, menstrual disorder, depression, constipation, IBS, menopause, and weight loss.</p>
-                    </div>
                 </div>
                 <div className='contact-icons'>
-                    <div className='phone contact-icon'>
+                    <div className='phone contact-icon icon-left'>
                         <h2>Phone</h2>
                         <TiPhoneOutline className='contact-icon-img' />
                         (818) 877-9777
@@ -63,7 +44,7 @@ class Contact extends React.Component {
                         <GoMailRead className='contact-icon-img' />
                         mydayspaca@gmail.com
                     </div>
-                    <div className='yelp contact-icon'>
+                    <div className='yelp contact-icon icon-right'>
                         <h2>Yelp</h2>
                         <FaYelp className='contact-icon-img' />
                         <a 
