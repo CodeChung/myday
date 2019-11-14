@@ -3,6 +3,7 @@ import { TiPhoneOutline } from 'react-icons/ti'
 import { GoMailRead } from 'react-icons/go'
 import { FaYelp} from 'react-icons/fa'
 import './Contact.css'
+import couple from '../../images/couple.png'
 
 class Contact extends React.Component {
     state = {
@@ -20,7 +21,7 @@ class Contact extends React.Component {
             <section className={`page-contact ${!loading && ' page-active'}`}>
                 <div className='contact-form-container'>
                     <form className='contact-form'>
-                        <legend>Drop Us A Message</legend>
+                        <legend><h2>Drop Us A Message!</h2></legend>
                         <label>Email
                             <input type='email' placeholder='user@mail.com' />
                         </label>
@@ -28,10 +29,11 @@ class Contact extends React.Component {
                             <input type='tel' placeholder='(111) 111-1111' pattern="([0-9]{3}) [0-9]{2}-[0-9]{3}" required />
                         </label>
                         <label>Message
-                            <textarea />
+                            <textarea rows={9} />
                         </label>
                         <button>Send</button>
                     </form>
+                    <img src={couple} alt='couple massage' className={loading ? '' : 'contact-img-active'} />
                 </div>
                 <div className='contact-icons'>
                     <div className='phone contact-icon icon-left'>
@@ -57,6 +59,7 @@ class Contact extends React.Component {
                     <div class="mapouter">
                         <div class="gmap_canvas">
                             <iframe width="500" 
+                                title='map'
                                 height="400" id="gmap_canvas" 
                                 src="https://maps.google.com/maps?q=26787%20Agoura%20Rd%20Ste%20E7%20Calabasas%2C%20CA%2091302&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                                 frameborder="0" scrolling="no" 

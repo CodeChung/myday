@@ -78,6 +78,7 @@ class Services extends React.Component {
                             </div>
                         </li>
                     </ul>
+                    <a href="https://www.picktime.com/6c44a31a-e8bc-4155-9af7-2faa231db4a1" className="ptbkbtn" target="_blank" ><img border="none" src="https://www.picktime.com/bookingPage/img/picktime-book-online.png" alt="Book an appointment with My Day Spa"/></a>
                     <ServiceIcons />
                 </div>
                 <img src={flyer} alt='promo' />

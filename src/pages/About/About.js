@@ -18,14 +18,20 @@ class About extends React.Component {
         const { loading } = this.state
         return (
             <section className={`page-about ${!loading && ' page-active'}`}>
-                <div className='about-card-1'>
-                    <div className='img-wrapper'>
-                        <img src={sohn} alt='Dr. Sohn' />
+                <div className='about-cards'>
+                    <div className='about-card about-card-1'>
+                        <div className='img-wrapper'>
+                            <img src={sohn} alt='Dr. Sohn' />
+                        </div>
+                        <div className='about-desc'>
+                            <h2>TOMMY JEHUN SOHN, <br /> LAC, PHD</h2>
+                        </div>
                     </div>
-                </div>
-                <div className='about-card-2'>
-                    <div className='img-wrapper'>
-                        <img src={rui} alt='Dr. Rui' />
+                    <div className='about-divider' />
+                    <div className='about-card about-card-2'>
+                        <div className='img-wrapper'>
+                            <img src={rui} alt='Dr. Rui' />
+                        </div>
                     </div>
                 </div>
             </section>
