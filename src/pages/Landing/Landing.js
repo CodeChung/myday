@@ -31,6 +31,7 @@ class Landing extends React.Component {
                     </Typing>
                 </section>
                 <section className='landing-desc'>
+                    <img src='https://snipboard.io/Fc0xB2.jpg' className='banner' alt='banner' />
                     <div className='landing-block'>
                         <img src='https://snipboard.io/uwgEOj.jpg' alt='store-front'></img>
                         <p>Located in Calabasas, My Day Spa and Wellness is committed to bringing health, wellness, and peace to the world.</p>

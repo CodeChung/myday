@@ -12,6 +12,7 @@ import candle from './images/candle.mp4'
 import logo from './images/logolarge.jpg'
 import beach from './images/beach.mp4'
 import mistogan from './images/flour.mp4'
+import incense from './images/incense.mp4'
 import './App.css';
 
 class App extends React.Component {
@@ -49,7 +50,7 @@ class App extends React.Component {
         </Menu>
         <main id="page-wrap">
           <div className='video-wrapper'>
-            <video id='myVideo' className='video-background' src={window.location.href.includes('services') ? beach : window.location.href.includes('about') ? mistogan : candle } muted={true} loop={true} />
+            <video id='myVideo' className='video-background' src={window.location.href.includes('services') ? beach : window.location.href.includes('about') ? mistogan : window.location.href.includes('contact') ? incense : candle } muted={true} loop={true} />
           </div>
           <section className='body'>
             <nav className='nav'>
