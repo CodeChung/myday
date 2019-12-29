@@ -15,6 +15,7 @@ class Services extends React.Component {
         }
     }
     componentDidMount() {
+        console.log(window.location.href)
         setTimeout(this.toggle, 200)
     }
     toggle = () => {
@@ -28,61 +29,66 @@ class Services extends React.Component {
     render() {
         const { loading } = this.state
         return (
+            <>
             <section className={`page-services ${!loading && ' page-active'}`}>
                 <div className='services'>
                     <h1>Services</h1>
                     <ul>
                         <li>
-                            Massages         
+                            Acupuncture
                             <div class="checkbox-container">
-                            <label class="checkbox-label">
-                                <input onClick={() => this.toggleIcon('massage')} type="checkbox" />
-                                <span class="checkbox-custom rectangular"></span>
-                            </label>
+                                <label class="checkbox-label">
+                                    <input onClick={() => this.toggleIcon('acupuncture')} type="checkbox" />
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
                             </div>
                         </li>
                         <li>
-                            Acupuncture         
+                            Massages
                             <div class="checkbox-container">
-                            <label class="checkbox-label">
-                                <input onClick={() => this.toggleIcon('acupuncture')} type="checkbox" />
-                                <span class="checkbox-custom rectangular"></span>
-                            </label>
+                                <label class="checkbox-label">
+                                    <input onClick={() => this.toggleIcon('massage')} type="checkbox" />
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
                             </div>
                         </li>
                         <li>
-                            Permanent Make Up        
+                            Permanent Make Up
                             <div class="checkbox-container">
-                            <label class="checkbox-label">
-                                <input onClick={() => this.toggleIcon('makeup')} type="checkbox" />
-                                <span class="checkbox-custom rectangular"></span>
-                            </label>
+                                <label class="checkbox-label">
+                                    <input onClick={() => this.toggleIcon('makeup')} type="checkbox" />
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
                             </div>
                         </li>
                         <li>
-                            Waxing       
+                            Waxing
                             <div class="checkbox-container">
-                            <label class="checkbox-label">
-                                <input onClick={() => this.toggleIcon('wax')} type="checkbox" />
-                                <span class="checkbox-custom rectangular"></span>
-                            </label>
+                                <label class="checkbox-label">
+                                    <input onClick={() => this.toggleIcon('wax')} type="checkbox" />
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
                             </div>
                         </li>
                         <li>
-                            Skin Care Products        
+                            Skin Care Products
                             <div class="checkbox-container">
-                            <label class="checkbox-label">
-                                <input onClick={() => this.toggleIcon('skin')} type="checkbox" />
-                                <span class="checkbox-custom rectangular"></span>
-                            </label>
+                                <label class="checkbox-label">
+                                    <input onClick={() => this.toggleIcon('skin')} type="checkbox" />
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
                             </div>
                         </li>
                     </ul>
-                    <a href="https://www.picktime.com/6c44a31a-e8bc-4155-9af7-2faa231db4a1" className="ptbkbtn" target="_blank" ><img border="none" src="https://www.picktime.com/bookingPage/img/picktime-book-online.png" alt="Book an appointment with My Day Spa"/></a>
+                    <a href="https://www.picktime.com/6c44a31a-e8bc-4155-9af7-2faa231db4a1" className="ptbkbtn" target="_blank" ><img border="none" src="https://www.picktime.com/bookingPage/img/picktime-book-online.png" alt="Book an appointment with My Day Spa" /></a>
                     <ServiceIcons />
                 </div>
                 <img src={flyer} alt='promo' />
             </section>
+            <section>
+                PICS
+            </section>
+            </>
         )
     }
 }

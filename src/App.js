@@ -10,6 +10,8 @@ import Services from './pages/Services/Services'
 // import massage from './images/massage.mp4'
 import candle from './images/candle.mp4'
 import logo from './images/logolarge.jpg'
+import beach from './images/beach.mp4'
+import mistogan from './images/flour.mp4'
 import './App.css';
 
 class App extends React.Component {
@@ -33,31 +35,33 @@ class App extends React.Component {
     const { navOpen } = this.state
     return (
       <div id="outer-container">
-        <Menu 
+        <Menu
           isOpen={navOpen}
-          pageWrapId={ "page-wrap" } 
-          outerContainerId={ "outer-container" } 
-          right 
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
+          right
           width={220}>
           <div className='hamburger-list'>
             <Link onClick={this.closeNav} to='/services'>Services</Link>
             <Link onClick={this.closeNav} to='/about'>About</Link>
             <Link onClick={this.closeNav} to='/contact'>Contact</Link>
           </div>
-        </Menu>            
+        </Menu>
         <main id="page-wrap">
           <div className='video-wrapper'>
-            <video id='myVideo' className='video-background' src={candle} muted={true} loop={true} />
+            <video id='myVideo' className='video-background' src={window.location.href.includes('services') ? beach : window.location.href.includes('about') ? mistogan : candle } muted={true} loop={true} />
           </div>
           <section className='body'>
             <nav className='nav'>
-              <Link onClick={this.closeNav} to='/'><img src={logo} alt='logo' /></Link>
               <ul>
                 <li>
                   <Link to='/' onClick={this.closeNav} >Home</Link>
                 </li>
                 <li>
                   <Link to='/services' onClick={this.closeNav} >Services</Link>
+                </li>
+                <li>
+                  <Link onClick={this.closeNav} to='/'><img src={logo} alt='logo' /></Link>
                 </li>
                 <li>
                   <Link to='/about' onClick={this.closeNav} >About</Link>

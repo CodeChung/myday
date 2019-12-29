@@ -63,7 +63,7 @@ nav img {
 
 nav a {
   text-decoration: none;
-  color: rgb(36, 36, 36);
+  color: whitesmoke;
   font-size: 1.4em;
   transition: .5s ease-in;
   padding: 0 20px;
@@ -88,6 +88,13 @@ nav ul {
   list-style: none;
   display: flex;
   font-family: 'Work Sans', serif;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav img {
+  border-radius: 50%;
 }
 
 nav ul li {
@@ -106,6 +113,8 @@ nav ul li {
   width: 100px;
   left: 80px;
   position: relative;
+  color: whitesmoke;
+  z-index: 10000000;
 }
 
 .hamburger-list {
