@@ -39,7 +39,8 @@ class Contact extends React.Component {
                     <div className='phone contact-icon icon-left'>
                         <h2>Phone</h2>
                         <TiPhoneOutline className='contact-icon-img' />
-                        (818) 877-9777
+                        Massage, Facial : 818.877.9777<br/>
+                        Acupuncture  :  805.557.8921
                     </div>
                     <div className='email contact-icon contact-middle'>
                         <h2>Email</h2>

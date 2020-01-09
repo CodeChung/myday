@@ -1,9 +1,14 @@
+.service-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .page-services {
     opacity: 0;
     transition: 1.2s ease;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: calc(100vh - 124px);
 }
 
@@ -32,8 +37,35 @@
     justify-content: center;
     flex-direction: column;
     padding: 50px;
-    width: 320px;
+    max-width: 420px;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.336);
+}
+
+.service-text {
+    background: #333;
+    color: whitesmoke !important;
+    border-radius: 7.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    width: 380px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.336);
+    text-align: left;
+}
+
+.massage-menu {
+    background: black;
+    color: whitesmoke;
+    border-radius: 7.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.336);
+    margin: 0 auto;
 }
 
 .services h1 {
@@ -185,4 +217,35 @@
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
+}
+
+.massage-list {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.massage-list li {
+    list-style: none;
+    text-align: left;
+    width: 19%;
+    border-radius: 5px 5px 0 0;
+    padding: 0;
+    background: ghostwhite;
+}
+
+.massage-list li h4 {
+    background: rgb(147, 215, 255);
+    color: black;
+    padding: 6px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.massage-list li p {
+    margin: 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }

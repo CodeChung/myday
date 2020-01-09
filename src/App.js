@@ -9,7 +9,7 @@ import Services from './pages/Services/Services'
 
 // import massage from './images/massage.mp4'
 import candle from './images/candle.mp4'
-import logo from './images/logolarge.jpg'
+import logo from './images/lol.png'
 import beach from './images/beach.mp4'
 import mistogan from './images/flour.mp4'
 import incense from './images/incense.mp4'
@@ -62,7 +62,7 @@ class App extends React.Component {
                   <Link to='/services' onClick={this.closeNav} >Services</Link>
                 </li>
                 <li>
-                  <Link onClick={this.closeNav} to='/'><img src={logo} alt='logo' /></Link>
+                  <Link onClick={this.closeNav} to='/'><img className='logo' src={logo} alt='logo' /></Link>
                 </li>
                 <li>
                   <Link to='/about' onClick={this.closeNav} >About</Link>
