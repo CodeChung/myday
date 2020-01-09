@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/myday/static/css/main.691ff94f.chunk.css",
+    "main.js": "/myday/static/js/main.f3478a55.chunk.js",
+    "main.js.map": "/myday/static/js/main.f3478a55.chunk.js.map",
+    "runtime-main.js": "/myday/static/js/runtime-main.9406039c.js",
+    "runtime-main.js.map": "/myday/static/js/runtime-main.9406039c.js.map",
+    "static/css/2.91b209d5.chunk.css": "/myday/static/css/2.91b209d5.chunk.css",
+    "static/js/2.0a8dac37.chunk.js": "/myday/static/js/2.0a8dac37.chunk.js",
+    "static/js/2.0a8dac37.chunk.js.map": "/myday/static/js/2.0a8dac37.chunk.js.map",
+    "index.html": "/myday/index.html",
+    "precache-manifest.4b95d9a3d14712c0fe36e548c040d0f4.js": "/myday/precache-manifest.4b95d9a3d14712c0fe36e548c040d0f4.js",
+    "service-worker.js": "/myday/service-worker.js",
+    "static/css/2.91b209d5.chunk.css.map": "/myday/static/css/2.91b209d5.chunk.css.map",
+    "static/css/main.691ff94f.chunk.css.map": "/myday/static/css/main.691ff94f.chunk.css.map",
+    "static/media/beach.mp4": "/myday/static/media/beach.47fcc021.mp4",
+    "static/media/biopic.JPG": "/myday/static/media/biopic.c255198d.JPG",
+    "static/media/candle.mp4": "/myday/static/media/candle.bc4e18f7.mp4",
+    "static/media/couple.png": "/myday/static/media/couple.4d2d9ff6.png",
+    "static/media/flour.mp4": "/myday/static/media/flour.2e9cb156.mp4",
+    "static/media/incense.mp4": "/myday/static/media/incense.6b5b9ec5.mp4",
+    "static/media/lol.png": "/myday/static/media/lol.f1e71d25.png",
+    "static/media/services.jpg": "/myday/static/media/services.63dfbc89.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9406039c.js",
+    "static/css/2.91b209d5.chunk.css",
+    "static/js/2.0a8dac37.chunk.js",
+    "static/css/main.691ff94f.chunk.css",
+    "static/js/main.f3478a55.chunk.js"
+  ]
+}
