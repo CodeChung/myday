@@ -222,16 +222,40 @@
 .massage-list {
     display: flex;
     box-sizing: border-box;
-    justify-content: space-around;
+    justify-content: center;
+    flex-flow: wrap;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .massage-list li {
     list-style: none;
     text-align: left;
-    width: 19%;
-    border-radius: 5px 5px 0 0;
+    width: 220px;
+    height: 220px;
+    border-radius: 5px;
     padding: 0;
+    margin: 15px 10px;
     background: ghostwhite;
+
+}
+
+.massage-list li img {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: .6s ease-in-out;
+}
+
+.massage-list li img:hover {
+    opacity: 0;
+}
+
+
+.massage-list li h2:hover {
+    opacity: 0;
 }
 
 .massage-list li h4 {

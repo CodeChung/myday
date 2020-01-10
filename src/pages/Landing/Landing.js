@@ -20,15 +20,7 @@ class Landing extends React.Component {
         return (
             <div>
                 <section className={`page-landing ${!loading && ' page-active'}`}>
-                    <Typing>
-                        <h1>   Relax & Rejuvenate</h1>
-                        <Typing.Delay ms={1500} />
-                        <Typing.Backspace count={20} />
-                        <h1>It's Your Day!</h1>
-                        <Typing.Delay ms={1500} />
-                        <Typing.Backspace count={25} />
-                        <h1>My Day Spa & Wellness</h1>
-                    </Typing>
+                    <h1>My Day Spa & Wellness</h1>
                 </section>
                 <section className='landing-desc'>
                     <img src='https://snipboard.io/Fc0xB2.jpg' className='banner' alt='banner' />

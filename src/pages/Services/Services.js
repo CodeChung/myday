@@ -1,7 +1,11 @@
 import React from 'react'
 import ServiceIcons from './ServiceIcons'
 import './Services.css'
-import flyer from '../../images/services.jpg'
+import massage1 from '../../images/massage1.jpg'
+import massage2 from '../../images/massage2.jpg'
+import massage3 from '../../images/massage3.jpg'
+import massage4 from '../../images/massage4.jpg'
+import massage5 from '../../images/massage5.jpg'
 
 class Services extends React.Component {
     state = {
@@ -97,28 +101,33 @@ regulates the flow of vital energy along pathways known as meridians.</p>
                     <h2>Massage Menu</h2>
                     <ul className="massage-list">
                         <li>
+                            <img src={massage1} alt='swedish massage' />
                             <h4>Swedish</h4>
                             <p>The invigorating massage technique using elbows and forearms to work on deeper
 tissues. Result is a profound relief from muscle tightness.</p>
                         </li>
                         <li>
+                            <img src={massage2} alt='deep tissue massage' />
                             <h4>Deep Tissue</h4>
                             <p>Deep tissue massage usually focuses on a specific problem, such as chronic muscle
 pain, injury rehabilitation, and the following conditions:chronic pain.lower back
 pain.tennis elbow.limited mobility.</p>
                         </li>
                         <li>
+                            <img src={massage3} alt='combination massage' />
                             <h4>Combination</h4>
                             <p>The muscle-soothing flow of Swedish massage and our special oil, coupled with the
 chi-balancing power of Shiatsu's finger pressure.</p>
                         </li>
                         <li>
+                            <img src={massage4} alt='foot massage' />
                             <h4>Foot Reflexology</h4>
                             <p>This ancient massage is believed to help promote oxygenation of tissues of several
 major organs of the body by focusing on the reflex zones of the feet that correspond to
 them. Other benefits include improved circulation, ease of pain.</p>
                         </li>
                         <li>
+                            <img src={massage5} alt='oil massage' />
                             <h4>Warm Oil Massage</h4>
                             <p>This ancient massage is believed to help promote oxygenation of tissues of several
 major organs of the body by focusing on the reflex zones of the feet that correspond to

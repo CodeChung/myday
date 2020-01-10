@@ -2,7 +2,6 @@
   "name": "mydayacupuncture",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://codechung.github.io/myday",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "gsap": "^2.1.3",
